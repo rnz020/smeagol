@@ -67,6 +67,7 @@ return array(
     'modules' => array(
         'Application',
 		'Admin',                  // <-- Agregamos esta línea
+                'AssetManager',
     ),
     'module_listener_options' => array(
         'config_glob_paths'    => array(
