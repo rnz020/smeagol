@@ -92,22 +92,7 @@ return array(
             __DIR__ . '/../view',
         ),
     ),
-    // agregar este bloque al final
-    'asset_manager' => array(
-    		'resolver_configs' => array(
-    				'paths' => array(
-    						__DIR__ . '/../public',
-    				),
-    		),
-			'caching' => array(
-				'default' => array(
-					'cache'     => 'Filesystem',
-					'options' => array(
-						'dir' => __DIR__.'/../../../public/cache', // path/to/cache
-					),
-				),
-			),
-    ),
+  
     // agregar este bloque
     'asset_manager' => array(
     		'resolver_configs' => array(
@@ -140,5 +125,22 @@ return array(
         'template_path_stack' => array(
             __DIR__ . '/../../../themes',   // <------------------  Modificar aca
         ),
-    ), 
+    ),
+    
+   'asset_manager' => array(
+    		'resolver_configs' => array(
+    				'paths' => array(
+    						__DIR__ . '/../public',
+    				),
+    		),
+			'caching' => array(
+				'default' => array(
+					'cache'     => 'Filesystem',
+					'options' => array(
+						'dir' => __DIR__.'/../../../public/cache', // path/to/cache
+					),
+				),
+			),
+    ),  
+    
 );
